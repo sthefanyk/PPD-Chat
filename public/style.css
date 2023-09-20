@@ -1,6 +1,13 @@
 body {
   margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
+
 ul,
 li {
   margin: 0;
@@ -8,26 +15,27 @@ li {
   list-style: none;
 }
 
+.btn {
+  cursor: pointer;
+  padding: 5px 15px;
+  background-color: #000;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  font-size: 15px;
+}
+
 .page {
   height: 100vh;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-#loginPage {
-  display: flex;
   background-color: #fff;
-}
-#loginNameInput {
-  border: 2px solid #000;
-  background-color: #ccc;
-  font-size: 18px;
-  padding: 10px;
   border-radius: 5px;
-  outline: 0;
-  width: 100%;
-  max-width: 400px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  height: min-content;
+  min-width: 30%;
 }
 
 #chatPage {
@@ -85,4 +93,57 @@ li {
   background-color: #ccc;
   outline: 0;
   border: 0;
+}
+
+/* JOIN */
+
+.join-main {
+  padding: 30px 40px;
+  background: var(--dark-color-b);
+}
+
+.join-main p {
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.join-main .form-control {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.join-main label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.join-main input[type='text'] {
+  font-size: 16px;
+  padding: 5px;
+  height: 40px;
+  width: 100%;
+}
+
+.join-main select {
+  border: 2px solid #000;
+  font-size: 16px;
+  padding: 5px;
+  height: 40px;
+  width: 100%;
+}
+
+.join-main .btn {
+  margin-top: 20px;
+  width: 100%;
+}
+
+#loginNameInput, #room {
+  border: 2px solid #000;
+  font-size: 18px;
+  border-radius: 5px;
+  outline: 0;
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
 }
